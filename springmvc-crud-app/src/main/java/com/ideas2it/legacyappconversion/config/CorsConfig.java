@@ -1,4 +1,4 @@
-package blog.panditmandar.code.mvcapp.config;
+package com.ideas2it.legacyappconversion.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

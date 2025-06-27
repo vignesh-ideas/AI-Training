@@ -1,11 +1,11 @@
-package blog.panditmandar.code.mvcapp.dao;
+package com.ideas2it.legacyappconversion.dao;
 
 import java.util.List;
 
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import blog.panditmandar.code.mvcapp.model.Student;
+import com.ideas2it.legacyappconversion.model.Student;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 

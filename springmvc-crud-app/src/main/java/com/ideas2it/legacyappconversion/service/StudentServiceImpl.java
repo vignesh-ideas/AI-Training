@@ -1,12 +1,12 @@
-package blog.panditmandar.code.mvcapp.service;
+package com.ideas2it.legacyappconversion.service;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import blog.panditmandar.code.mvcapp.dao.StudentDaoImpl;
-import blog.panditmandar.code.mvcapp.model.Student;
+import com.ideas2it.legacyappconversion.dao.StudentDaoImpl;
+import com.ideas2it.legacyappconversion.model.Student;
 
 @Service
 public class StudentServiceImpl {

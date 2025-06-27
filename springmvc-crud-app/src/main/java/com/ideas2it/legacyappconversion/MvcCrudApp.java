@@ -1,4 +1,4 @@
-package blog.panditmandar.code.mvcapp;
+package com.ideas2it.legacyappconversion;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

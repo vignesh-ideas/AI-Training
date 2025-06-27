@@ -1,4 +1,4 @@
-package blog.panditmandar.code.mvcapp.controller;
+package com.ideas2it.legacyappconversion.controller;
 
 import java.util.List;
 
@@ -8,8 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import blog.panditmandar.code.mvcapp.model.Student;
-import blog.panditmandar.code.mvcapp.service.StudentServiceImpl;
+import com.ideas2it.legacyappconversion.model.Student;
+import com.ideas2it.legacyappconversion.service.StudentServiceImpl;
 
 @RestController
 @RequestMapping("/api/students")
