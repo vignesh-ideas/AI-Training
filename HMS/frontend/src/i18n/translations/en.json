@@ -1,0 +1,99 @@
+{
+  "app": {
+    "title": "Hospital Management System",
+    "login": "Login",
+    "logout": "Logout",
+    "register": "Register",
+    "profile": "Profile",
+    "dashboard": "Dashboard",
+    "admin": "Admin",
+    "patients": "Patients",
+    "appointments": "Appointments",
+    "medicalRecords": "Medical Records",
+    "vitals": "Vitals",
+    "labResults": "Lab Results",
+    "prescriptions": "Prescriptions",
+    "chat": "Chat",
+    "notifications": "Notifications",
+    "emailNotifications": "Email Notifications",
+    "analytics": "Analytics",
+    "patientAnalytics": "Patient Analytics",
+    "hospitalAnalytics": "Hospital Analytics",
+    "reports": "Reports",
+    "export": "Export",
+    "settings": "Settings",
+    "search": "Search",
+    "actions": "Actions",
+    "save": "Save",
+    "cancel": "Cancel",
+    "edit": "Edit",
+    "delete": "Delete",
+    "view": "View",
+    "create": "Create",
+    "update": "Update",
+    "next": "Next",
+    "previous": "Previous",
+    "submit": "Submit",
+    "close": "Close",
+    "loading": "Loading...",
+    "noData": "No data available",
+    "required": "This field is required",
+    "error": "An error occurred",
+    "success": "Success",
+    "welcome": "Welcome, {{name}}!"
+  },
+  "login": {
+    "title": "Login to HMS",
+    "username": "Username",
+    "password": "Password",
+    "rememberMe": "Remember me",
+    "forgotPassword": "Forgot password?",
+    "signIn": "Sign In",
+    "noAccount": "Don't have an account?",
+    "signUp": "Sign up"
+  },
+  "register": {
+    "title": "Register for HMS",
+    "confirmPassword": "Confirm Password",
+    "alreadyHaveAccount": "Already have an account?",
+    "signIn": "Sign in"
+  },
+  "profile": {
+    "editProfile": "Edit Profile",
+    "updateProfile": "Update Profile",
+    "changePassword": "Change Password"
+  },
+  "patients": {
+    "register": "Register Patient",
+    "search": "Search Patients",
+    "dashboard": "Patient Dashboard",
+    "profile": "Patient Profile"
+  },
+  "appointments": {
+    "schedule": "Schedule Appointment",
+    "manage": "Manage Appointments"
+  },
+  "medicalRecords": {
+    "manage": "Manage Medical Records",
+    "create": "Create Medical Record",
+    "edit": "Edit Medical Record"
+  },
+  "notifications": {
+    "center": "Notification Center",
+    "email": "Email Notifications"
+  },
+  "analytics": {
+    "patient": "Patient Analytics",
+    "hospital": "Hospital Analytics"
+  },
+  "reports": {
+    "generate": "Generate Report"
+  },
+  "export": {
+    "dataExport": "Data Export"
+  },
+  "settings": {
+    "accessibility": "Accessibility",
+    "language": "Language"
+  }
+} 

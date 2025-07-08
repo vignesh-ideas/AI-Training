@@ -1,0 +1,60 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+rule_files:
+  # - "first_rules.yml"
+  # - "second_rules.yml"
+
+scrape_configs:
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']
+
+  - job_name: 'discovery-service'
+    static_configs:
+      - targets: ['discovery-service:8761']
+
+  - job_name: 'config-service'
+    static_configs:
+      - targets: ['config-service:8888']
+
+  - job_name: 'api-gateway'
+    static_configs:
+      - targets: ['api-gateway:8080']
+
+  - job_name: 'user-service'
+    static_configs:
+      - targets: ['user-service:8081']
+
+  - job_name: 'patient-service'
+    static_configs:
+      - targets: ['patient-service:8082']
+
+  - job_name: 'appointment-service'
+    static_configs:
+      - targets: ['appointment-service:8083']
+
+  - job_name: 'medical-records-service'
+    static_configs:
+      - targets: ['medical-records-service:8084']
+
+  - job_name: 'vitals-service'
+    static_configs:
+      - targets: ['vitals-service:8085']
+
+  - job_name: 'lab-service'
+    static_configs:
+      - targets: ['lab-service:8086']
+
+  - job_name: 'prescription-service'
+    static_configs:
+      - targets: ['prescription-service:8087']
+
+  - job_name: 'notification-service'
+    static_configs:
+      - targets: ['notification-service:8088']
+
+  - job_name: 'chat-service'
+    static_configs:
+      - targets: ['chat-service:8089'] 

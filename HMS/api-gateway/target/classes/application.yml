@@ -1,0 +1,89 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      routes:
+        # User Service Routes
+        - id: user-service
+          uri: lb://user-service
+          predicates:
+            - Path=/api/users/**
+          filters:
+            - StripPrefix=1
+        
+        # Patient Service Routes
+        - id: patient-service
+          uri: lb://patient-service
+          predicates:
+            - Path=/api/patients/**
+          filters:
+            - StripPrefix=1
+        
+        # Appointment Service Routes
+        - id: appointment-service
+          uri: lb://appointment-service
+          predicates:
+            - Path=/api/appointments/**
+          filters:
+            - StripPrefix=1
+        
+        # Medical Records Service Routes
+        - id: medical-records-service
+          uri: lb://medical-records-service
+          predicates:
+            - Path=/api/medical-records/**
+          filters:
+            - StripPrefix=1
+        
+        # Vitals Service Routes
+        - id: vitals-service
+          uri: lb://vitals-service
+          predicates:
+            - Path=/api/vitals/**
+          filters:
+            - StripPrefix=1
+        
+        # Lab Service Routes
+        - id: lab-service
+          uri: lb://lab-service
+          predicates:
+            - Path=/api/labs/**
+          filters:
+            - StripPrefix=1
+        
+        # Prescription Service Routes
+        - id: prescription-service
+          uri: lb://prescription-service
+          predicates:
+            - Path=/api/prescriptions/**
+          filters:
+            - StripPrefix=1
+        
+        # Notification Service Routes
+        - id: notification-service
+          uri: lb://notification-service
+          predicates:
+            - Path=/api/notifications/**
+          filters:
+            - StripPrefix=1
+        
+        # Chat Service Routes
+        - id: chat-service
+          uri: lb://chat-service
+          predicates:
+            - Path=/api/chat/**
+          filters:
+            - StripPrefix=1
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/ 
