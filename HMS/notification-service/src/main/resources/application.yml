@@ -1,16 +1,11 @@
-server:
-  port: 8088
-
 spring:
   application:
     name: notification-service
-  
   datasource:
-    url: jdbc:postgresql://localhost:5432/hms_notification
-    username: hms_user
-    password: hms_password
+    url: jdbc:postgresql://localhost:5432/hms_notifications
+    username: postgres
+    password: password
     driver-class-name: org.postgresql.Driver
-  
   jpa:
     hibernate:
       ddl-auto: update
@@ -19,11 +14,12 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
         format_sql: true
-  
   cloud:
     discovery:
       enabled: true
-      service-id: ${spring.application.name}
+
+server:
+  port: 8086
 
 management:
   endpoints:
@@ -36,7 +32,5 @@ management:
 
 logging:
   level:
-    com.hms.notification: DEBUG
-    org.springframework.web: DEBUG
-    org.hibernate.SQL: DEBUG
-    org.hibernate.type.descriptor.sql.BasicBinder: TRACE 
+    com.hms.notificationservice: DEBUG
+    org.springframework.web: DEBUG 

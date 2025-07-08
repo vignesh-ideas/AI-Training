@@ -1,16 +1,11 @@
-server:
-  port: 8089
-
 spring:
   application:
     name: chat-service
-  
   datasource:
     url: jdbc:postgresql://localhost:5432/hms_chat
-    username: hms_user
-    password: hms_password
+    username: postgres
+    password: password
     driver-class-name: org.postgresql.Driver
-  
   jpa:
     hibernate:
       ddl-auto: update
@@ -19,11 +14,12 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
         format_sql: true
-  
   cloud:
     discovery:
       enabled: true
-      service-id: ${spring.application.name}
+
+server:
+  port: 8087
 
 management:
   endpoints:
@@ -36,7 +32,5 @@ management:
 
 logging:
   level:
-    com.hms.chat: DEBUG
-    org.springframework.web: DEBUG
-    org.hibernate.SQL: DEBUG
-    org.hibernate.type.descriptor.sql.BasicBinder: TRACE 
+    com.hms.chatservice: DEBUG
+    org.springframework.web: DEBUG 
